@@ -139,7 +139,7 @@ form.addEventListener('submit', function (event) {
   // const formData = new FormData(event.target);
   // const productid = formData.get('productid');
 
-  fetch('http://localhost:3000/send-request', {
+  fetch('https://regs-nodejs.vercel.app/send-request', {
     method: 'POST',
     // mode: 'no-cors',
     headers: {
