@@ -1,0 +1,60 @@
+{
+    "product": "CONSUMER_CREDIT",
+    "intent": "VENMO_SOFT_ENQUIRY",
+    "country_code": "US",
+    "global_tracking_id": "d44da179-ed0b-40aa-a27e-c261e9b923e0",
+    "application_auth_id": "56d2aa7c-fb38-4475-a98a-35cab904418f",
+    "flow_source": "CREDIT_DIRECT_APPLICATION",
+    "merchant_id": "1820978209738272980",
+    "credit_primary_actor_type": "PAYPAL",
+    "credit_authentication_type": "MEMBER",
+    "party": {
+        "type": "PERSONAL",
+        "party_id": "1820978209738272980",
+        "name": {
+            "given_name": "Jeremy",
+            "surname": "E"
+        },
+        "addresses": [
+            {
+                "address_line_1": "98 crofton dr ",
+                "admin_area_2": "West Seneca",
+                "admin_area_1": "NY",
+                "postal_code": "14224",
+                "country_code": "US",
+                "address_details": {
+                    "street_number": "98",
+                    "street_name": "CROFTON"
+                },
+                "type": "Residential"
+            }
+        ],
+        "phones": [
+            {
+                "country_code": "1",
+                "phone_entered": "7029129011",
+                "confirmation_status": "null"
+            }
+        ],
+        "date_of_birth": "1986-07-13",
+        "document_identifiers": [
+            {
+                "value": "3418",
+                "type": "TAX_ID",
+                "sub_type": "SSN4"
+            }
+        ],
+        "file_attributes": [],
+        "ip_address": "166.194.188.110",
+        "email_address": "evensj13@gmail.com",
+        "net_monthly_income": {
+            "currency_code": "USD",
+            "value": "197188.00"
+        }
+    },
+    "use_bureau_cache": false,
+    "auth_received_hour": 11,
+    "v66_ppc_ip_ad_dist_ind_num": "12",
+    "uvs_workflow_name": "CREDIT_SOFT_ENQUIRY",
+    "uvs_verification_purpose": "INDIVIDUAL_DATA"
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Zoot CT Testing</title>
+    <meta content="This is an example of using client-side JavaScript to create dynamic web content."
+          name="description">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<h4>We will do a call to zoot and send you the response</h4>
+
+<form action="/send-request" id="myForm" method="post">
+    <table>
+        <tr>
+            <td>Product</td>
+            <td>
+                <select id="productid" name="productid">
+                    <option value="ppc_us_v2">PPC_US_V2</option>
+                    <option value="pp_uk_ppc">PP_UK_PPC</option>
+                    <option value="credit_card_us">CREDIT_CARD_US</option>
+                    <option value="credit_card_paypal_consumer_rewards_us">CREDIT_CARD_PAYPAL_CONSUMER_REWARDS_US
+                    </option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Vendor Flow</td>
+            <td>
+                <select id="vendorflow" name="vendorflow">
+                    <option value="TU">TU</option>
+                    <option value="TU_IDA">TU_IDA</option>
+                    <option value="TU_EFX_LN">TU_EFX_LN</option>
+                    <option value="TU_IDA_LN">TU_IDA_LN</option>
+                </select>
+            </td>
+        <tr>
+
+        <tr>
+            <td>Do you have test data?</td>
+            <td>
+                <select id="testdata" name="testdata">
+                    <option value="NO">NO</option>
+                    <option value="YES">YES</option>
+                </select>
+            </td>
+        <tr>
+
+        <tr>
+            <td><h3>If you have test data, enter below details</h3></td>
+        </tr>
+
+        <tr>
+            <td>First Name</td>
+            <td><input name="firstname" type="text"></td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td><input name="lastname" type="text"></td>
+        </tr>
+        <tr>
+            <td>DOB</td>
+            <td><input name="dob" type="date"></td>
+        </tr>
+        <tr>
+            <td>SSN4</td>
+            <td><input name="ssn4" type="text"></td>
+        </tr>
+        <tr>
+            <td>Address Line 1</td>
+            <td><input name="addrline1" type="text"></td>
+        </tr>
+        <tr>
+            <td>Address Line 2</td>
+            <td><input name="addrline2" type="text"></td>
+        </tr>
+        <tr>
+            <td>City</td>
+            <td><input name="city" type="text"></td>
+        </tr>
+        <tr>
+            <td>State</td>
+            <td><input name="state" type="text"></td>
+        </tr>
+        <tr>
+            <td>ZIP Code</td>
+            <td><input name="zip" type="text"></td>
+        </tr>
+        <tr>
+            <td>Country</td>
+            <td>
+                <select id="country" name="country">
+                    <option value="US">US</option>
+                    <option value="UK">UK</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <button type="submit">Submit</button>
+            </td>
+        </tr>
+    </table>
+</form>
+<hr>
+
+<table>
+    <tr>
+        <td>Request used is :</td>
+        <td>Response received is :</td>
+    </tr>
+    <tr>
+        <td>
+            <pre class="pre-container" id="request"></pre>
+        </td>
+        <td>
+            <pre class="pre-container" id="response"></pre>
+        </td>
+    </tr>
+</table>
+
+<script src="client.js"></script>
+
+</body>
+
+</html>
