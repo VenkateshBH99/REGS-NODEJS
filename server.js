@@ -18,7 +18,7 @@ process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
 app.use(cors());
 
-app.get('/regs', function(req, res) {
+app.get('/', function(req, res) {
 
     res.sendFile(__dirname + '/index.html');
 });
@@ -43,7 +43,7 @@ app.post('/send-request', (req, res) => {
             console.error(error);
             res.status(500).send('Error sending request');
         });
-    res.redirect('/regs');
+    res.redirect('/');
 });
 
 app.listen(port, function () {
